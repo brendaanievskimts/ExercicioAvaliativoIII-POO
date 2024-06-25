@@ -13,6 +13,13 @@ public class Agricola extends Robo {
         this.uso = uso;
     }
 
+    public double getArea() {
+        return area;
+    }
+
+    public String getUso() {
+        return uso;
+    }
 
     @Override
     public double calculaLocacao(int dias) {

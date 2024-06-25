@@ -21,15 +21,15 @@ public class ListaRobos {
         return true;
     }
 
-    public Robo consultaRobo(int id){
+    public boolean consultaRobo(int id){
         if(!robos.isEmpty()){
             for(Robo r : robos){
                 if(r.getId() == id){
-                    return r;
+                    return true;
                 }
             }
         }
-        return null;
+        return false;
     }
 
     public ArrayList<Robo> getRobos(){
